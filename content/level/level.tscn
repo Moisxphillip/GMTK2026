@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://b0jkpnkpvptq5"]
+
+[ext_resource type="Script" uid="uid://tltxvcmxvbkx" path="res://content/level/level.gd" id="1_nwd7t"]
+[ext_resource type="Script" uid="uid://doe4a3kx0p5jk" path="res://content/level/player.gd" id="2_nwd7t"]
+
+[sub_resource type="Environment" id="Environment_g4v7s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_g4v7s"]
+size = Vector3(20, 0.5, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(20, 0.5, 20)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yf5fn"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_g4v7s"]
+
+[node name="Level" type="Node3D" unique_id=1488430888]
+script = ExtResource("1_nwd7t")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1236735418]
+environment = SubResource("Environment_g4v7s")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=618535775]
+transform = Transform3D(1, 0, 0, 0, 0.76016974, 0.6497245, 0, -0.6497245, 0.76016974, 0, 31.035547, 10.149899)
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=1999038092]
+
+[node name="Mesh" type="MeshInstance3D" parent="Floor" unique_id=834418315]
+mesh = SubResource("BoxMesh_g4v7s")
+
+[node name="Collision" type="CollisionShape3D" parent="Floor" unique_id=1831954707]
+shape = SubResource("BoxShape3D_g4v7s")
+debug_color = Color(0.5486401, 0.941541, 0.9999998, 0.41960785)
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1878543885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6583924, 0)
+script = ExtResource("2_nwd7t")
+
+[node name="Collision" type="CollisionShape3D" parent="Player" unique_id=899874659]
+shape = SubResource("CapsuleShape3D_yf5fn")
+
+[node name="Mesh" type="MeshInstance3D" parent="Player" unique_id=1941920825]
+mesh = SubResource("CapsuleMesh_g4v7s")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1205763263]
+transform = Transform3D(0.78926224, 0, 0.6140563, 0, 1, 0, -0.6140563, 0, 0.78926224, 9.157307, 3.5252323, 9.816723)

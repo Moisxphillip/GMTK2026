@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b73uwo35riitf"]
+
+[ext_resource type="Script" uid="uid://doe4a3kx0p5jk" path="res://content/level/player.gd" id="1_2rga7"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yf5fn"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_g4v7s"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g4v7s"]
+radius = 2.2194898
+
+[node name="Player" type="CharacterBody3D" unique_id=628080023]
+script = ExtResource("1_2rga7")
+
+[node name="Shape" type="CollisionShape3D" parent="." unique_id=364079064]
+shape = SubResource("CapsuleShape3D_yf5fn")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1497506906]
+mesh = SubResource("CapsuleMesh_g4v7s")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=771367171]
+transform = Transform3D(0.999762, 0.006179171, -0.02092174, 0, 0.95904577, 0.2832512, 0.021815164, -0.28318378, 0.95881754, 0.17040777, 4.336702, 15.194138)
+fov = 37.849285
+
+[node name="Interactions" type="Area3D" parent="." unique_id=2128532041]
+
+[node name="Shape" type="CollisionShape3D" parent="Interactions" unique_id=2053755928]
+shape = SubResource("SphereShape3D_g4v7s")
+debug_color = Color(0.9280507, 0.48488092, 0.51400226, 0.41960785)

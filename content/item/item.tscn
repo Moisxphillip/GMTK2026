@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c1b4g8bajus14"]
+
+[ext_resource type="Script" uid="uid://cr4d0pg3qyh7r" path="res://content/item/item.gd" id="1_6630t"]
+[ext_resource type="Material" uid="uid://b2mtp54hw5k2x" path="res://content/item/outline.tres" id="2_6630t"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g4v7s"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_yf5fn"]
+radius = 0.2
+height = 0.4
+
+[node name="Item" type="Area3D" unique_id=927965350]
+script = ExtResource("1_6630t")
+outline = ExtResource("2_6630t")
+
+[node name="Shape" type="CollisionShape3D" parent="." unique_id=1515096863]
+shape = SubResource("SphereShape3D_g4v7s")
+
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1183910572]
+mesh = SubResource("SphereMesh_yf5fn")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

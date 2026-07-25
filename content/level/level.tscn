@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://tltxvcmxvbkx" path="res://content/level/level.gd" id="1_nwd7t"]
 [ext_resource type="PackedScene" uid="uid://b73uwo35riitf" path="res://content/player/player.tscn" id="2_nwd7t"]
+[ext_resource type="PackedScene" uid="uid://ce3fag6plgc27" path="res://content/player/camera.tscn" id="3_kyf6a"]
+[ext_resource type="PackedScene" uid="uid://c1b4g8bajus14" path="res://content/item/item.tscn" id="4_tjgjj"]
 
 [sub_resource type="Environment" id="Environment_g4v7s"]
 
@@ -34,4 +36,18 @@ shape = SubResource("BoxShape3D_g4v7s")
 debug_color = Color(0.5486401, 0.941541, 0.9999998, 0.41960785)
 
 [node name="Player" parent="." unique_id=628080023 instance=ExtResource("2_nwd7t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6583924, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7922268, 0)
+
+[node name="Camera" parent="." unique_id=659061368 node_paths=PackedStringArray("target") instance=ExtResource("3_kyf6a")]
+target = NodePath("../Player")
+speed = 8.0
+smoothness = 7.0
+
+[node name="Item" parent="." unique_id=927965350 instance=ExtResource("4_tjgjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5924692, 3.4978786)
+
+[node name="Item2" parent="." unique_id=2096643774 instance=ExtResource("4_tjgjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.936077, 0.5924692, 1.6023283)
+
+[node name="Item3" parent="." unique_id=230440283 instance=ExtResource("4_tjgjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3936055, 0.5924692, 2.2442288)

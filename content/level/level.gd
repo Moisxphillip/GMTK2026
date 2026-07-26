@@ -14,33 +14,33 @@ var fruitTimer: Timer = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	fruitCount = 0
-	gasTimer = $GasTimer
-	fruitTimer = $FruitTimer
-	fruitLabel.text = "Fruits: " + str(fruitCount)
+    fruitCount = 0
+    gasTimer = $GasTimer
+    fruitTimer = $FruitTimer
+    fruitLabel.text = "Fruits: " + str(fruitCount)
 
 
 func add_fruit() -> void:
-	fruitCount += 1
-	fruitLabel.text = "Fruits: " + str(fruitCount)
-	player.add_fruit()
+    fruitCount += 1
+    fruitLabel.text = "Fruits: " + str(fruitCount)
+    player.add_fruit()
 
 
 func _on_gas_timer_timeout() -> void:
-	gasTimer.start()
-	spawnItem(gas)
+    gasTimer.start()
+    spawnItem(gas)
 
 
 func _on_fruit_timer_timeout() -> void:
-	fruitTimer.start()
-	spawnItem(fruit)
+    fruitTimer.start()
+    spawnItem(fruit)
 
 
 func spawnItem(resource: Resource) -> void:
 
-	var item: Node3D = resource.instantiate()
+    var item: Node3D = resource.instantiate()
 
-	item.position.x = randi_range(-levelSize, levelSize);
-	item.position.z = randi_range(-levelSize, levelSize);
+    item.position.x = randi_range(-levelSize, levelSize);
+    item.position.z = randi_range(-levelSize, levelSize);
 
-	add_child(item)
+    add_child(item)

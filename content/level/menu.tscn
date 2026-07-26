@@ -63,4 +63,18 @@ Drive: WASD
 Pick up fruit: F"
 horizontal_alignment = 1
 
+[node name="Name" type="Label" parent="." unique_id=549501208]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -326.0
+offset_top = 76.0
+offset_right = 326.0
+offset_bottom = 249.0
+grow_horizontal = 2
+theme = ExtResource("2_d0lqa")
+theme_override_font_sizes/font_size = 150
+text = "CHERIMOYA"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

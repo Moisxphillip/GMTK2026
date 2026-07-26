@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://b0jkpnkpvptq5"]
 
 [ext_resource type="Script" uid="uid://tltxvcmxvbkx" path="res://content/level/level.gd" id="1_nwd7t"]
-[ext_resource type="PackedScene" uid="uid://p643gbsajjps" path="res://content/env_models/gas.tscn" id="2_228od"]
 [ext_resource type="PackedScene" uid="uid://b73uwo35riitf" path="res://content/player/player.tscn" id="2_nwd7t"]
 [ext_resource type="PackedScene" uid="uid://cw761loxo1c5i" path="res://content/hud/hud.tscn" id="2_ysoro"]
 [ext_resource type="PackedScene" uid="uid://ce3fag6plgc27" path="res://content/player/camera.tscn" id="3_kyf6a"]
@@ -35,9 +34,6 @@ size = Vector3(20, 0.5, 20)
 script = ExtResource("1_nwd7t")
 
 [node name="HUD" parent="." unique_id=811344649 instance=ExtResource("2_ysoro")]
-
-[node name="Gas" parent="." unique_id=1533881584 instance=ExtResource("2_228od")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7339673, 0.18172133, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1236735418]
 environment = SubResource("Environment_g4v7s")

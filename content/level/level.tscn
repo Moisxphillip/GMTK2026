@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dulek4ernb88c" path="res://content/env_models/tile_stone.tscn" id="7_228od"]
 [ext_resource type="PackedScene" uid="uid://1te7i6wcp6x7" path="res://content/env_models/tile_stone_grass.tscn" id="8_ysoro"]
 [ext_resource type="PackedScene" uid="uid://c0uoqpwy5fhvq" path="res://content/env_models/ground_plain.glb" id="11_ysoro"]
+[ext_resource type="PackedScene" uid="uid://cwuy7wfeakynp" path="res://content/env_models/flower.glb" id="12_d3lay"]
 
 [sub_resource type="Sky" id="Sky_ysoro"]
 
@@ -3577,6 +3578,165 @@ autostart = true
 
 [node name="ground_plain" parent="." unique_id=1481583906 instance=ExtResource("11_ysoro")]
 transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.1, -13.128239)
+
+[node name="flower" parent="ground_plain" unique_id=1354295646 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.18864769, 0.1, -0.22857562)
+
+[node name="flower2" parent="ground_plain" unique_id=1243957110 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.25864768, 0.1, -0.30857563)
+
+[node name="flower28" parent="ground_plain" unique_id=1392823849 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.026775967, 0.1, -0.20902753)
+
+[node name="flower29" parent="ground_plain" unique_id=835772672 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.0031282401, 0.1, -0.42470068)
+
+[node name="flower30" parent="ground_plain" unique_id=408845467 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.0972344, 0.1, -0.42470068)
+
+[node name="flower31" parent="ground_plain" unique_id=1435549345 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.0972344, 0.1, -0.39304996)
+
+[node name="flower32" parent="ground_plain" unique_id=439284699 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.108067006, 0.1, -0.41982764)
+
+[node name="flower33" parent="ground_plain" unique_id=745111698 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.108067006, 0.1, -0.2154991)
+
+[node name="flower34" parent="ground_plain" unique_id=1275060872 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.118416585, 0.1, -0.18454298)
+
+[node name="flower35" parent="ground_plain" unique_id=1073963241 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.19097348, 0.1, -0.18454298)
+
+[node name="flower36" parent="ground_plain" unique_id=1406480128 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.19889157, 0.1, -0.2900449)
+
+[node name="flower37" parent="ground_plain" unique_id=501567960 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.19889157, 0.1, -0.61370796)
+
+[node name="flower38" parent="ground_plain" unique_id=1452707007 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.13866009, 0.1, -0.6840216)
+
+[node name="flower39" parent="ground_plain" unique_id=1647686131 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.05973333, 0.1, -0.71163726)
+
+[node name="flower3" parent="ground_plain" unique_id=889880755 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.31864768, 0.1, 0.011424392)
+
+[node name="flower4" parent="ground_plain" unique_id=108000064 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.4686477, 0.1, -0.10857561)
+
+[node name="flower5" parent="ground_plain" unique_id=1970584398 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.38864768, 0.1, 0.27142438)
+
+[node name="flower40" parent="ground_plain" unique_id=481696978 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.27115276, 0.1, 0.27142438)
+
+[node name="flower41" parent="ground_plain" unique_id=1935272117 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.27115276, 0.1, 0.40527534)
+
+[node name="flower42" parent="ground_plain" unique_id=1959884298 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.39324915, 0.1, 0.4755633)
+
+[node name="flower43" parent="ground_plain" unique_id=589628802 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.6484417, 0.1, 0.4755633)
+
+[node name="flower44" parent="ground_plain" unique_id=25332532 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.6484417, 0.1, 0.60132456)
+
+[node name="flower45" parent="ground_plain" unique_id=1378797791 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.26408598, 0.1, 0.60132456)
+
+[node name="flower46" parent="ground_plain" unique_id=1380233355 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.26408598, 0.1, 0.88677335)
+
+[node name="flower47" parent="ground_plain" unique_id=1738730497 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.20004265, 0.1, 0.88677335)
+
+[node name="flower48" parent="ground_plain" unique_id=1590041939 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.20004265, 0.1, 0.8186021)
+
+[node name="flower49" parent="ground_plain" unique_id=1401893681 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.04680992, 0.1, 0.85228777)
+
+[node name="flower50" parent="ground_plain" unique_id=607863161 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.33718917, 0.1, 0.6875707)
+
+[node name="flower51" parent="ground_plain" unique_id=1962310422 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.2708987, 0.1, 0.66649044)
+
+[node name="flower52" parent="ground_plain" unique_id=795867702 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.25054306, 0.1, 0.5046895)
+
+[node name="flower53" parent="ground_plain" unique_id=839935963 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.2714077, 0.1, 0.35392642)
+
+[node name="flower6" parent="ground_plain" unique_id=2122596311 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.32396546, 0.1, 0.6560118)
+
+[node name="flower7" parent="ground_plain" unique_id=572348057 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.48809597, 0.1, 0.5396347)
+
+[node name="flower8" parent="ground_plain" unique_id=1329503142 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.294437, 0.1, 0.36305726)
+
+[node name="flower9" parent="ground_plain" unique_id=524210471 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.2648318, 0.1, 0.15800586)
+
+[node name="flower10" parent="ground_plain" unique_id=921756966 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.3129895, 0.1, -0.1315735)
+
+[node name="flower11" parent="ground_plain" unique_id=417178207 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.25247198, 0.1, -0.1315735)
+
+[node name="flower12" parent="ground_plain" unique_id=1064823751 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.25247198, 0.1, -0.48206902)
+
+[node name="flower13" parent="ground_plain" unique_id=357058970 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.37502006, 0.1, -0.48206902)
+
+[node name="flower14" parent="ground_plain" unique_id=650119280 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.37502006, 0.1, -0.9207226)
+
+[node name="flower15" parent="ground_plain" unique_id=1441897471 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.52432096, 0.1, -0.9207226)
+
+[node name="flower16" parent="ground_plain" unique_id=1662906596 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.52432096, 0.1, 0.6144181)
+
+[node name="flower17" parent="ground_plain" unique_id=161663214 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.4253671, 0.1, 0.6144181)
+
+[node name="flower18" parent="ground_plain" unique_id=22608133 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.4253671, 0.1, 0.8232956)
+
+[node name="flower19" parent="ground_plain" unique_id=1297345496 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.26474664, 0.1, 0.8232956)
+
+[node name="flower20" parent="ground_plain" unique_id=1460104929 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.23078968, 0.1, 0.89502203)
+
+[node name="flower21" parent="ground_plain" unique_id=2129847927 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.11546596, 0.1, 0.9419517)
+
+[node name="flower22" parent="ground_plain" unique_id=1012351348 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, 0.11546596, 0.1, 0.829645)
+
+[node name="flower23" parent="ground_plain" unique_id=1750146796 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.07299797, 0.1, 0.829645)
+
+[node name="flower24" parent="ground_plain" unique_id=596462590 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.07299797, 0.1, 0.9232122)
+
+[node name="flower25" parent="ground_plain" unique_id=1203135615 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.508081, 0.1, 0.9232122)
+
+[node name="flower26" parent="ground_plain" unique_id=1776143990 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.508081, 0.1, 0.7265238)
+
+[node name="flower27" parent="ground_plain" unique_id=1876248898 instance=ExtResource("12_d3lay")]
+transform = Transform3D(0.02, 0, 0, 0, 2, 0, 0, 0, 0.04, -0.39737028, 0.1, 0.7265238)
 
 [connection signal="timeout" from="GasTimer" to="." method="_on_gas_timer_timeout"]
 [connection signal="timeout" from="FruitTimer" to="." method="_on_fruit_timer_timeout"]

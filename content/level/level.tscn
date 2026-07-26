@@ -3568,9 +3568,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015302, 0, 0)
 visible = false
 
 [node name="GasTimer" type="Timer" parent="." unique_id=1216548678]
+wait_time = 4.0
 autostart = true
 
 [node name="FruitTimer" type="Timer" parent="." unique_id=1583872562]
+wait_time = 2.5
 autostart = true
 
 [node name="ground_plain" parent="." unique_id=1481583906 instance=ExtResource("11_ysoro")]

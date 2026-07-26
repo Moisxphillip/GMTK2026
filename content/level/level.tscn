@@ -36,11 +36,10 @@ shape = SubResource("BoxShape3D_g4v7s")
 debug_color = Color(0.5486401, 0.941541, 0.9999998, 0.41960785)
 
 [node name="Player" parent="." unique_id=628080023 instance=ExtResource("2_nwd7t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7922268, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4096973, 0)
 
 [node name="Camera" parent="." unique_id=659061368 node_paths=PackedStringArray("target") instance=ExtResource("3_kyf6a")]
 target = NodePath("../Player")
-speed = 8.0
 smoothness = 7.0
 
 [node name="Item" parent="." unique_id=927965350 instance=ExtResource("4_tjgjj")]

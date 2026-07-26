@@ -11,7 +11,7 @@ func _ready():
     if target:
         current_position = target.global_transform.origin + offset
 	
-func _process(delta):
+func _physics_process(delta):
     if not target:
         return
 	

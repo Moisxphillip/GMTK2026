@@ -1,17 +1,18 @@
 [gd_scene format=3 uid="uid://b73uwo35riitf"]
 
 [ext_resource type="Script" uid="uid://c1ujqq6b7b2ib" path="res://content/player/player.gd" id="1_2rga7"]
+[ext_resource type="PackedScene" uid="uid://dfyja01arre2o" path="res://content/scooter/scooter.glb" id="2_y66qv"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yf5fn"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g4v7s"]
+radius = 1.3373605
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_g4v7s"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yf5fn"]
 radius = 0.29882813
 height = 0.8737488
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_g4v7s"]
-radius = 1.3373605
 
 [node name="Player" type="CharacterBody3D" unique_id=628080023]
 script = ExtResource("1_2rga7")
@@ -20,17 +21,20 @@ script = ExtResource("1_2rga7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_yf5fn")
 
-[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1497506906]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_g4v7s")
-
-[node name="Mesh2" type="MeshInstance3D" parent="Mesh" unique_id=1033317030]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.988, 0.562)
-mesh = SubResource("CapsuleMesh_yf5fn")
+[node name="Mesh" parent="." unique_id=153821445 instance=ExtResource("2_y66qv")]
 
 [node name="Interactions" type="Area3D" parent="Mesh" unique_id=2128532041]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Shape" type="CollisionShape3D" parent="Mesh/Interactions" unique_id=2053755928]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1734135)
 shape = SubResource("SphereShape3D_g4v7s")
 debug_color = Color(0.9280507, 0.48488092, 0.51400226, 0.41960785)
+
+[node name="Mesh" type="MeshInstance3D" parent="Mesh" unique_id=1497506906]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8681738, 0.27446914)
+mesh = SubResource("CapsuleMesh_g4v7s")
+
+[node name="Mesh2" type="MeshInstance3D" parent="Mesh/Mesh" unique_id=1033317030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.988, 0.562)
+mesh = SubResource("CapsuleMesh_yf5fn")

@@ -7,17 +7,17 @@ var current_position: Vector3 = Vector3.ZERO
 var offset: Vector3 = Vector3.ZERO
 
 func _ready():
-    offset = global_transform.origin
-    if target:
-        current_position = target.global_transform.origin + offset
+	offset = global_transform.origin
+	if target:
+		current_position = target.global_transform.origin + offset
 	
 func _physics_process(delta):
-    if not target:
-        return
+	if not target:
+		return
 	
-    var desired_position = target.global_transform.origin + offset
-    var lerp_factor = smoothness * delta
+	var desired_position = target.global_transform.origin + offset
+	var lerp_factor = smoothness * delta
 	
-    current_position = current_position.lerp(desired_position, lerp_factor)
+	current_position = current_position.lerp(desired_position, lerp_factor)
 	
-    global_transform.origin = current_position
+	global_transform.origin = current_position

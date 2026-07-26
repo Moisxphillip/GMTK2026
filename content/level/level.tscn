@@ -356,3 +356,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
 [node name="Tile4" parent="Floor2" unique_id=858001323 instance=ExtResource("8_ysoro")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.015302, 0, 0)
 visible = false
+
+[node name="GasTimer" type="Timer" parent="." unique_id=1216548678]
+autostart = true
+
+[node name="FruitTimer" type="Timer" parent="." unique_id=1583872562]
+autostart = true
+
+[connection signal="timeout" from="GasTimer" to="." method="_on_gas_timer_timeout"]
+[connection signal="timeout" from="FruitTimer" to="." method="_on_fruit_timer_timeout"]

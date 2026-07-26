@@ -41,3 +41,6 @@ mesh = SubResource("CapsuleMesh_g4v7s")
 [node name="Mesh2" type="MeshInstance3D" parent="Mesh/Mesh" unique_id=1033317030]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.988, 0.562)
 mesh = SubResource("CapsuleMesh_yf5fn")
+
+[node name="Basket" type="Node3D" parent="Mesh" unique_id=190878130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8890977, -1.0653445)

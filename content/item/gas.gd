@@ -2,6 +2,6 @@ extends Area3D
 
 
 func _on_area_entered(area: Area3D) -> void:
-	if area.name == "Interactions":
-		area.get_parent().get_parent().fuel +=10.0
-		queue_free()
+    if area.name == "Interactions":
+        area.get_parent().get_parent().fuel +=10.0
+        queue_free()

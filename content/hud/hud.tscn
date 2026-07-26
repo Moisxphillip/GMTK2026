@@ -8,14 +8,24 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="." unique_id=1050211054]
+[node name="Fuel" type="Label" parent="." unique_id=1050211054]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -184.0
-offset_right = 184.0
-offset_bottom = 110.0
+offset_left = -538.0
+offset_top = 29.0
+offset_right = -386.0
+offset_bottom = 68.0
 grow_horizontal = 2
-horizontal_alignment = 1
+text = "Fuel: 15.0"
+vertical_alignment = 1
+
+[node name="Fruits" type="Label" parent="." unique_id=426968614]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 67.0
+offset_right = 174.0
+offset_bottom = 105.0
+text = "Fruits: 0"
 vertical_alignment = 1

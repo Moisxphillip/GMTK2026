@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://p643gbsajjps"]
+
+[ext_resource type="Script" uid="uid://d34eg6pyjy0kj" path="res://content/item/gas.gd" id="1_j1whk"]
+[ext_resource type="PackedScene" uid="uid://owndfgouaji6" path="res://content/env_models/gas.glb" id="2_xu3mh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(1, 0.68144226, 0.37678528)
+
+[node name="Gas" type="Area3D" unique_id=1533881584]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_j1whk")
+
+[node name="gas" parent="." unique_id=750748879 instance=ExtResource("2_xu3mh")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1494199760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3398056, 0.0017623901)
+shape = SubResource("BoxShape3D_g4v7s")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

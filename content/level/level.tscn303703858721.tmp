@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://b0jkpnkpvptq5"]
+
+[ext_resource type="Script" uid="uid://tltxvcmxvbkx" path="res://content/level/level.gd" id="1_nwd7t"]
+[ext_resource type="PackedScene" uid="uid://b73uwo35riitf" path="res://content/player/player.tscn" id="2_nwd7t"]
+[ext_resource type="PackedScene" uid="uid://ce3fag6plgc27" path="res://content/player/camera.tscn" id="3_kyf6a"]
+[ext_resource type="PackedScene" uid="uid://c1b4g8bajus14" path="res://content/item/item.tscn" id="4_tjgjj"]
+
+[sub_resource type="Environment" id="Environment_g4v7s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_g4v7s"]
+size = Vector3(20, 0.5, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sisfh"]
+albedo_color = Color(0.5609549, 0.5609549, 0.5609549, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(20, 0.5, 20)
+
+[node name="Level" type="Node3D" unique_id=1488430888]
+script = ExtResource("1_nwd7t")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1236735418]
+environment = SubResource("Environment_g4v7s")
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=618535775]
+transform = Transform3D(1, 0, 0, 0, 0.76016974, 0.6497245, 0, -0.6497245, 0.76016974, 0, 31.035547, 10.149899)
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=1999038092]
+
+[node name="Mesh" type="MeshInstance3D" parent="Floor" unique_id=834418315]
+mesh = SubResource("BoxMesh_g4v7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_sisfh")
+
+[node name="Collision" type="CollisionShape3D" parent="Floor" unique_id=1831954707]
+shape = SubResource("BoxShape3D_g4v7s")
+debug_color = Color(0.5486401, 0.941541, 0.9999998, 0.41960785)
+
+[node name="Player" parent="." unique_id=628080023 instance=ExtResource("2_nwd7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4096973, 0)
+
+[node name="Camera" parent="." unique_id=659061368 node_paths=PackedStringArray("target") instance=ExtResource("3_kyf6a")]
+target = NodePath("../Player")
+smoothness = 7.0
+
+[node name="Item" parent="." unique_id=927965350 instance=ExtResource("4_tjgjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5924692, 3.4978786)
+
+[node name="Item2" parent="." unique_id=2096643774 instance=ExtResource("4_tjgjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.936077, 0.5924692, 1.6023283)
+
+[node name="Item3" parent="." unique_id=230440283 instance=ExtResource("4_tjgjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3936055, 0.5924692, 2.2442288)

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://melp1ix4mowt"]
+
+[ext_resource type="PackedScene" uid="uid://cgop71qdghmkx" path="res://content/env_models/ground_grass.glb" id="1_oeecy"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5sk10"]
+data = PackedVector3Array(1, 0.19999999, -1, -1, 0.19999999, 1, -1, 0.19999999, -1, 1, 0.19999999, -1, 1, 0.19999999, 1, -1, 0.19999999, 1, 1, 0, 1, -1, 0.19999999, 1, 1, 0.19999999, 1, 1, 0, 1, -1, 0, 1, -1, 0.19999999, 1, -1, 0, 1, -1, 0.19999999, -1, -1, 0.19999999, 1, -1, 0, 1, -1, 0, -1, -1, 0.19999999, -1, -1, 0, -1, 1, 0, 1, 1, 0, -1, -1, 0, -1, -1, 0, 1, 1, 0, 1, 1, 0, -1, 1, 0.19999999, 1, 1, 0.19999999, -1, 1, 0, -1, 1, 0, 1, 1, 0.19999999, 1, -1, 0, -1, 1, 0.19999999, -1, -1, 0.19999999, -1, -1, 0, -1, 1, 0, -1, 1, 0.19999999, -1)
+
+[node name="Tile" type="StaticBody3D" unique_id=1077479521]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=588651081]
+shape = SubResource("ConcavePolygonShape3D_5sk10")
+
+[node name="ground_grass" parent="." unique_id=482822768 instance=ExtResource("1_oeecy")]

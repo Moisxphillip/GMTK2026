@@ -1,10 +1,17 @@
 extends Area3D
 @export var outline: Material
+var chirimoya = preload("res://content/item/chirimoya.glb")
+var maracuja = preload("res://content/item/maracuja.glb")
 
+var fruit: Node3D = null
 var interactable:bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-    pass # Replace with function body.
+    if randi() % 2 == 0:
+        fruit = chirimoya.instantiate()
+    else:
+        fruit = maracuja.instantiate()
+    add_child(fruit)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,9 +24,9 @@ func _process(_delta: float) -> void:
 
 func _on_area_entered(_area: Area3D) -> void:
     interactable = true
-    $Mesh.material_overlay = outline
+    fruit.get_child(0).material_overlay = outline
 
 
 func _on_area_exited(_area: Area3D) -> void:
     interactable = false
-    $Mesh.material_overlay = null
+    fruit.get_child(0).material_overlay = null

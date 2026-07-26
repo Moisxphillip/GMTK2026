@@ -12,7 +12,14 @@
 [ext_resource type="PackedScene" uid="uid://1te7i6wcp6x7" path="res://content/env_models/tile_stone_grass.tscn" id="8_ysoro"]
 [ext_resource type="PackedScene" uid="uid://c0uoqpwy5fhvq" path="res://content/env_models/ground_plain.glb" id="11_ysoro"]
 
+[sub_resource type="Sky" id="Sky_ysoro"]
+
 [sub_resource type="Environment" id="Environment_g4v7s"]
+background_mode = 1
+background_color = Color(0.044794433, 0.45523083, 0.5765089, 1)
+background_energy_multiplier = 1.74
+sky = SubResource("Sky_ysoro")
+ambient_light_energy = 1.15
 
 [sub_resource type="BoxMesh" id="BoxMesh_g4v7s"]
 size = Vector3(20, 0.5, 20)
@@ -3567,10 +3574,7 @@ autostart = true
 autostart = true
 
 [node name="ground_plain" parent="." unique_id=1481583906 instance=ExtResource("11_ysoro")]
-transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.1, 0)
-
-[node name="ground_plain2" parent="." unique_id=1716246365 instance=ExtResource("11_ysoro")]
-transform = Transform3D(200, 0, 0, 0, 0.99254614, -24.373869, 0, 0.12186935, 198.50923, 0, 10, -200)
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.1, -13.128239)
 
 [connection signal="timeout" from="GasTimer" to="." method="_on_gas_timer_timeout"]
 [connection signal="timeout" from="FruitTimer" to="." method="_on_fruit_timer_timeout"]

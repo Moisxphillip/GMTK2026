@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cw761loxo1c5i"]
 
+[ext_resource type="Theme" uid="uid://4d4rpgfmjyy1" path="res://content/font.tres" id="1_5pncd"]
+
 [node name="HUD" type="Control" unique_id=811344649]
 layout_mode = 3
 anchors_preset = 15
@@ -18,6 +20,7 @@ offset_top = 29.0
 offset_right = -386.0
 offset_bottom = 68.0
 grow_horizontal = 2
+theme = ExtResource("1_5pncd")
 text = "Fuel: 15.0"
 vertical_alignment = 1
 
@@ -27,5 +30,6 @@ offset_left = 38.0
 offset_top = 67.0
 offset_right = 174.0
 offset_bottom = 105.0
+theme = ExtResource("1_5pncd")
 text = "Fruits: 0"
 vertical_alignment = 1

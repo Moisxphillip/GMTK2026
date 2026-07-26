@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://8cfdon4ajk5s"]
+
+[ext_resource type="Script" uid="uid://deh5v8xu0dt62" path="res://content/level/end.gd" id="1_qwe2w"]
+[ext_resource type="Texture2D" uid="uid://oa3ij4tmdjmn" path="res://content/env_models/ground_grass_GroundTexture.png" id="2_t55vy"]
+[ext_resource type="Theme" uid="uid://4d4rpgfmjyy1" path="res://content/font.tres" id="3_t55vy"]
+
+[node name="End" type="Control" unique_id=1701891279]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qwe2w")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1443723626]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1580.0
+offset_top = -698.0
+offset_right = 1573.0
+offset_bottom = 1313.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t55vy")
+
+[node name="Button" type="Button" parent="." unique_id=1873717260]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -23.0
+offset_top = -188.0
+offset_right = 23.0
+offset_bottom = -157.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("3_t55vy")
+text = "Return to main menu"
+
+[node name="Score" type="Label" parent="." unique_id=623980909]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_t55vy")
+text = "Final score: "
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

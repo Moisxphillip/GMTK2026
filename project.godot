@@ -10,9 +10,17 @@ config_version=5
 
 [application]
 
-config/name="GMTK2026"
+config/name="Cherimoya"
+run/main_scene="uid://ca3es4s3kpcgf"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.0061826417, 0.17024258, 0.13678628, 1)
+boot_splash/use_filter=false
+boot_splash/image="uid://boe650gqete7l"
+config/icon="uid://boe650gqete7l"
+
+[autoload]
+
+Data="*uid://dg1d4wgv1l048"
 
 [display]
 

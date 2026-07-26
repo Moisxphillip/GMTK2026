@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://ca3es4s3kpcgf"]
+
+[ext_resource type="Script" uid="uid://c8p2gk7p8w7ul" path="res://content/level/menu.gd" id="1_fqd60"]
+[ext_resource type="Theme" uid="uid://4d4rpgfmjyy1" path="res://content/font.tres" id="2_d0lqa"]
+[ext_resource type="Texture2D" uid="uid://oa3ij4tmdjmn" path="res://content/env_models/ground_grass_GroundTexture.png" id="2_mjg5f"]
+
+[node name="Menu" type="Control" unique_id=1701891279]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fqd60")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1443723626]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1566.0
+offset_top = -670.0
+offset_right = 1587.0
+offset_bottom = 1341.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_d0lqa")
+texture = ExtResource("2_mjg5f")
+
+[node name="Button" type="Button" parent="." unique_id=1873717260]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -23.0
+offset_top = -188.0
+offset_right = 23.0
+offset_bottom = -157.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_d0lqa")
+text = "Start"
+
+[node name="Instructions" type="Label" parent="." unique_id=623980909]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_d0lqa")
+text = "Collect all the fruits you can before you run out of gas!
+
+Drive: WASD
+Pick up fruit: F"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

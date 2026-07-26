@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://4d4rpgfmjyy1"]
+
+[ext_resource type="FontFile" uid="uid://cgjfas4t5ygbk" path="res://content/BarberChop.otf" id="1_ul0dv"]
+
+[resource]
+default_font = ExtResource("1_ul0dv")
+default_font_size = 24
